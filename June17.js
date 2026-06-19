@@ -43,3 +43,4 @@ for (let num = 2; num < N; num++) {
         console.log(num);
     }
 }
+
