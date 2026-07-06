@@ -47,3 +47,25 @@
 //--------------------
 
 
+// let num =10;
+// let first = 0;
+// let second = 1;
+
+// for(let i =0; i<=num; i++){
+//     console.log(first); //0
+//     let next = first + second;
+//     first = second;
+//     second = next;
+// }
+
+// let num = 32145;
+// let sum = 0;
+
+// while(num>0){
+//     let digit = num%10;
+//     sum+=digit;
+//     num = Math.floor(num/10);
+// }
+
+// console.log(sum);
+
