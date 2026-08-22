@@ -1,13 +1,13 @@
 // // Find GCD of two numbers
 
-let a = 18;
-let b = 48;
+let a = 15;
+let b = 38;
 
 function findGCD(a,b){
     while(b !== 0 && a !==0){
-        let remainder = a%b;
-        a = b;
-        b = remainder;
+        let remainder = a%b; // remainder = 38%15 = 8
+        a = b; // a = 38
+        b = remainder; // b = 15
     }
     return a;
 }

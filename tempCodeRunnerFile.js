@@ -1,3 +1,1 @@
- for(let j =1; j <=i; j++){
-        process.stdout.write("*");
-    }  
+let remainder = num % divisor; // 123456/100 - > 1234.56
