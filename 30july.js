@@ -1,27 +1,27 @@
 // // Find GCD of two numbers
 
-let a = 15;
-let b = 38;
+// let a = 18;
+// let b = 36;
 
-function findGCD(a,b){
-    while(b !== 0 && a !==0){
-        let remainder = a%b; // remainder = 38%15 = 8
-        a = b; // a = 38
-        b = remainder; // b = 15
-    }
-    return a;
-}
-
-let gcd = findGCD(a,b);
-console.log(gcd);
-
-// // FInd the LCM
-// function findLCM(a,b,gcd){
-//     let lcm = (a * b)/gcd
-//     return lcm
+// function findGCD(a,b){
+//     while(b !== 0 && a !==0){
+//         let remainder = a%b; // remainder = 38%15 = 8
+//         a = b; // a = 38
+//         b = remainder; // b = 15
+//     }
+//     return a;
 // }
 
-// console.log(findLCM(a,b,gcd));
+// let gcd = findGCD(a,b);
+// console.log(gcd); // 6
+
+// FFind the LCM
+// function findLCM(a,b,gcd){
+//     let lcm = (a * b)/gcd
+//     return lcm;
+// }
+
+// console.log(findLCM(10,20,10)) // 20;
 
 //Print right angle triangle
 
@@ -31,9 +31,11 @@ console.log(gcd);
 // ****
 // *****
 
-// for(let i = 1 ; i<= n; i++){ //outer loop for rows
-//     for(let j =1; j <=i; j++){ //inner loop for columns
-//         process.stdout.write("*");
+// let num = 10;
+
+// for(let i =1; i<=num;i++){
+//     for(let j=1; j<=i;j++){
+//         process.stdout.write("*")
 //     }
 //     console.log()
 // }
@@ -44,6 +46,15 @@ console.log(gcd);
 // ***
 // **
 // *
+
+let n = 5;
+
+for (let i = n; i >= 1; i--) {
+  for (let j = 1; j <= i; j++) {
+    process.stdout.write("*");
+  }
+  console.log();
+}
 
 // for(let i = n; i>=1; i--){ // outer loop for rows
 //     for(let j =1; j <=i; j++){ // inner loop for columns
