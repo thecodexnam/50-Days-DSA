@@ -39,7 +39,7 @@ function rotateByK(num,k){ // k=2
 
 }
 
-let a = rotateByK(123456,2);
+let a = rotateByK(123,2); //561234
 console.log(a)
 
 // function rotateByK(num, k) {
