@@ -1,1 +1,3 @@
-let remainder = num % divisor; // 123456/100 - > 1234.56
+
+let gcd = findGCD(a,b);
+console.log(gcd); // 6
