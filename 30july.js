@@ -1,18 +1,19 @@
 // // Find GCD of two numbers
 
-// let a = 18;
-// let b = 48;
+let a = 18;
+let b = 48;
 
-// function findGCD(a,b){
-//     while(b !== 0 && a !==0){
-//         let remainder = a%b;
-//         a = b;
-//         b = remainder;
-//     }
-//     return a;
-// }
+function findGCD(a,b){
+    while(b !== 0 && a !==0){
+        let remainder = a%b;
+        a = b;
+        b = remainder;
+    }
+    return a;
+}
 
-// let gcd = findGCD(a,b);
+let gcd = findGCD(a,b);
+console.log(gcd);
 
 // // FInd the LCM
 // function findLCM(a,b,gcd){
@@ -101,18 +102,18 @@
 //     console.log();
 // }
 
-let n = 8 ;
+// let n = 8 ;
 
-for (let row = 0; row < n; row++) {
-    let pattern = "";
+// for (let row = 0; row < n; row++) {
+//     let pattern = "";
 
-    for (let col = 0; col < n; col++) {
-        if (row === col || row + col === n - 1) {
-            pattern += "* ";
-        } else {
-            pattern += "  ";
-        }
-    }
+//     for (let col = 0; col < n; col++) {
+//         if (row === col || row + col === n - 1) {
+//             pattern += "* ";
+//         } else {
+//             pattern += "  ";
+//         }
+//     }
 
-    console.log(pattern);
-}
+//     console.log(pattern);
+// }
