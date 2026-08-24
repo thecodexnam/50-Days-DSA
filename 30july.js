@@ -31,13 +31,13 @@
 // ****
 // *****
 
-// let num = 10;
+// let num = 5;
 
-// for(let i =1; i<=num;i++){
-//     for(let j=1; j<=i;j++){
-//         process.stdout.write("*")
-//     }
-//     console.log()
+// for(let i=1;i<=num;i++){
+//   for(let j=1; j<=i;j++){
+//     process.stdout.write("*")
+//   }
+//   console.log()
 // }
 
 // Downward triangle star pattern
@@ -47,21 +47,79 @@
 // **
 // *
 
-let n = 5;
+// let num =5;
 
-for (let i = n; i >= 1; i--) {
-  for (let j = 1; j <= i; j++) {
-    process.stdout.write("*");
+// for(let i = num; i >=1; i--){
+//   for(let j=1;j<=i;j++){
+//     process.stdout.write("*")
+//   }
+//   console.log()
+// }
+
+// * * * * *
+//   * * * *
+//     * * *
+//       * *
+//         *
+
+// let num = 6;
+
+// for (let i = 1; i <= num; i++) {
+//   let rows = "";
+
+//   //Spaces
+//   for (let j = 1; j < i; j++) {
+//     rows += " ";
+//   }
+
+//   //stars           //5 -1 +1 =
+//   for (let j = 1; j < num - i + 1; j++) {
+//     rows += "*";
+//   }
+//   console.log(rows);
+// }
+
+//     *
+//    ***
+//   *****
+//  *******
+//   *****
+//    ***
+//     *
+
+let num = 4;
+
+//Upper side
+for (let i = 1; i <= num; i++) {
+  let rows = "";
+
+  //spaces
+  for (let j = num; j > i; j--) {
+    rows += " ";
   }
-  console.log();
+
+  //star
+  for (let j = 1; j <= 2 * i - 1; j++) {
+    rows += "*";
+  }
+  console.log(rows);
 }
 
-// for(let i = n; i>=1; i--){ // outer loop for rows
-//     for(let j =1; j <=i; j++){ // inner loop for columns
-//         process.stdout.write("*");
-//     }
-//     console.log()
-// }
+//Lower side
+for (let i = 1; i <= num; i++) {
+  let rows = "";
+
+  //spaces
+  for (let j = 1; j <i; j++) {
+    rows += " ";
+  }
+
+  //star
+  for (let j = 1; j <= 2 * (num -i) +1; j++) {
+    rows += "*";
+  }
+  console.log(rows);
+}
 
 // let n = 5;
 
