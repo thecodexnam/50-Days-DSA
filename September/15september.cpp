@@ -4,29 +4,27 @@ using namespace std;
 //find the two sum elements in array using two pointer approach
 
 int main(){
-    int arr[] = {3,7,9,12,15};
-    int target = 21;
-    
-    while(true){
-        int left = 0;
-        int right = sizeof(arr)/sizeof(arr[0])-1;
+    int arr[] = {10,32,41,51,67};
+    int target = 92;
 
-        while(left<right){
-            int sum = arr[left]+arr[right];
+    int left = 0;
+    int right = sizeof(arr)/sizeof(arr[0])-1;
 
-            if(sum==target){
-                cout<<"The two sum elements are: "<<arr[left]<<" and "<<arr[right]<<endl;
-                return 0;
-            }
-            else if(sum<target){
-                left++;
-            }
-            else{
-                right--;
-            }
+    while(left<right){
+        int sum = arr[left]+arr[right];
+
+        if(sum == target){
+            cout << "sum of "<<arr[left]<<" and "<<arr[right]<<" is "<<target<<endl;
+            return 0;
+        }
+        else if(sum<target){
+            left++;
+        }
+        else{
+            right--;
         }
     }
-    
+return 0;
 }
 
 // int main(){
