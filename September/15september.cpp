@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     int arr[] = {10,32,41,51,67};
-    int target = 92;
+    int target = 9220;
 
     int left = 0;
     int right = sizeof(arr)/sizeof(arr[0])-1;
